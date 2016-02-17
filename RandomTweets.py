@@ -46,6 +46,7 @@ messages = [
 	"Have you been here before?",
 	"How's it going?",
 	"This is a blank tweet\nI should fill it with something\nWill this haiku do?",
+	"Good news everyone!  Wait, I forgot what it was...",
 ]
 
 message = random.choice(messages)

@@ -72,6 +72,17 @@ N,Y,Y,Y,Y,Y,Y,N,
 N,N,N,N,N,N,N,N
 ]
 
+sleep = [
+N,N,N,N,N,N,N,N,
+N,N,N,N,N,N,N,N,
+N,Y,Y,N,N,Y,Y,N,
+N,N,N,N,N,N,N,N,
+N,N,N,N,N,N,N,N,
+N,Y,N,N,N,N,Y,N,
+N,Y,Y,Y,Y,Y,Y,N,
+N,N,N,N,N,N,N,N
+]
+
 reset = [
 N,N,N,N,N,N,N,N,
 N,N,N,N,N,N,N,N,
@@ -83,7 +94,7 @@ N,N,N,N,N,N,N,N,
 N,N,N,N,N,N,N,N
 ]
 
-faces = [happy, sad, laugh, meh, wink]
+faces = [happy, sad, laugh, meh, sleep, wink]
 
 sense.set_pixels(random.choice(faces))
 #sense.set_pixels(reset)
