@@ -5,7 +5,6 @@ import sys
 import os
 import datetime
 from datetime import timedelta
-from sense_hat import SenseHat
 
 from twython import Twython
 #CONSUMER_KEY = 
@@ -20,15 +19,5 @@ with open('/proc/uptime', 'r') as f:
     uptime_seconds = float(f.readline().split()[0])
     uptime_string = str(timedelta(seconds = uptime_seconds))[:-7]
 
-sense = SenseHat()
-sense.clear()
-
-humidity = sense.get_humidity()
-humidity = round(humidity,2)
-humidity = str(humidity)
-
 i = datetime.datetime.now().strftime('%d/%m/%Y at %H:%M:%S')
-twitter.update_status(status='The humidity of the air around me is '+humidity+'% \nUptime: '+uptime_string+' \nTweeted on %s' %i)
-
-
-
+twitter.update_status(status='Hello again, I just booted! \nUptime: '+uptime_string+' \nTweeted on %s' %i)

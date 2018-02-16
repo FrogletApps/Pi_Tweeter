@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 from sense_hat import SenseHat
 import time
 import random
@@ -8,11 +11,14 @@ from twython import Twython
 #CONSUMER_SECRET = 
 #ACCESS_KEY = 
 #ACCESS_SECRET = in your code put the twitter codes here (without the comments).  I keep them elsewhere for safe keeping though ;)
-from secretcodes import *
+from secretCodes import *
 
 twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 
 sense = SenseHat()
+
+#This will make the image the correct way up when the camera ribbon is towards the USBs
+sense.rotation = 270;
 
 Y = [random.randint(50,255),random.randint(50,255),random.randint(50,255)]
 N = [0,0,0]
@@ -93,7 +99,7 @@ N,N,N,N,N,N,N,N,
 N,N,N,N,N,N,N,N,
 N,N,N,N,N,N,N,N
 ]
-
+ 
 faces = [happy, sad, laugh, meh, sleep, wink]
 
 sense.set_pixels(random.choice(faces))

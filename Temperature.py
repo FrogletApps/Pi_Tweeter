@@ -1,5 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+
 import sys
 import os
 import datetime
@@ -9,7 +10,7 @@ from twython import Twython
 #CONSUMER_SECRET = 
 #ACCESS_KEY = 
 #ACCESS_SECRET = in your code put the twitter codes here (without the comments).  I keep them elsewhere for safe keeping though ;)
-from secretcodes import *
+from secretCodes import *
 
 twitter = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)
 

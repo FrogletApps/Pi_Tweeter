@@ -1,20 +1,23 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import random
 import os
 
 scripts = [
-	"/home/pi/SillyTweeter/RandomTweets.py",
-	"/home/pi/SillyTweeter/RandomTweets.py",
+	"/home/pi/TweetScripts/randomTweets.py",
+	"/home/pi/TweetScripts/randomTweets.py",
 
-	"sudo python /home/pi/SillyTweeter/picture.py",
-	"sudo python /home/pi/SillyTweeter/picture.py",
+	"sudo python /home/pi/TweetScripts/selfie.py",
+	"sudo python /home/pi/TweetScripts/selfie.py",
 
-	"/home/pi/SillyTweeter/SenseHATHumidity.py",
+	"/home/pi/TweetScripts/senseHATHumidity.py",
 
-	"/home/pi/SillyTweeter/SenseHATPressure.py",
+	"/home/pi/TweetScripts/senseHATPressure.py",
 
-	"/home/pi/SillyTweeter/SenseHATTemperature.py",
+	"/home/pi/TweetScripts/senseHATTemperature.py",
 
-	"/home/pi/SillyTweeter/Temperature.py",
+	"/home/pi/TweetScripts/temperature.py",
 ]
 
 os.system(random.choice(scripts))

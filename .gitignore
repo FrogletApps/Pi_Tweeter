@@ -63,14 +63,6 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-#my own stuff
-Reboot.py
-Shutdown.py
-Startup.py
-
-TweetHello.py
-Tweetsearch.py
-readtweets.py
-
+# my own stuff
 secretcodes.py
 secretcodes.pyc
