@@ -3,4 +3,4 @@ A Raspberry Pi Twitterbot which can tweet selfies, random messages and sensor da
 
 It uses a Raspberry Pi B+, a Sense HAT and a Pi Camera, although you don't need anything more than a Raspberry Pi to do the basics.
 
-Its Twitter account can be found here:  @piserver2015
+Its Twitter account can be found here:  [@piserver2015](https://twitter.com/piserver2015)
