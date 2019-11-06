@@ -112,6 +112,7 @@ with PiCamera() as camera:
 	time.sleep(5)
 	sense.set_pixels(reset)
 	#camera.stop_preview()
+	camera.close()
 	
 	photo = open('/home/pi/image.jpg', 'rb')
 	response = twitter.upload_media(media=photo)
